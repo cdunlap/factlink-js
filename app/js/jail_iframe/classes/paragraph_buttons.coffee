@@ -37,7 +37,7 @@ class ParagraphButtons
 
   _articleContainerSelector: ->
     selectors = [
-      'article', 'div.article', 'div.story', 'div.single-post', 'div.post'
+      'article.full-article', 'div.article', 'div.story', 'div.single-post', 'div.post'
       'div#bodyContent', 'div#content', 'div.content', 'div#main', 'div.main'
       'div#page', 'div.page', 'div#site', 'div.site'
     ]
