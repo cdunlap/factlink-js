@@ -27,7 +27,8 @@ class ParagraphButtons
       setTimeout (=> @_addParagraphButtonsBatch(elementsLeft)), 200
 
   _paragraphSelectors: ->
-    ['p', 'li', 'dd', 'dt', '.paragraph', '.para', '.par', '.text', '.summary']
+    # ['p', 'li', 'dd', 'dt', '.paragraph', '.para', '.par', '.text', '.summary']
+    ['p']
 
   _prefixedParagraphSelectors: (prefix) ->
     (prefix + ' ' + selector for selector in @_paragraphSelectors())
@@ -36,11 +37,12 @@ class ParagraphButtons
     @_paragraphSelectors().join(',')
 
   _articleContainerSelector: ->
-    selectors = [
-      'article.full-article .body', 'div.article', 'div.story', 'div.single-post', 'div.post'
+    ###selectors = [
+      'article', 'div.article', 'div.story', 'div.single-post', 'div.post'
       'div#bodyContent', 'div#content', 'div.content', 'div#main', 'div.main'
       'div#page', 'div.page', 'div#site', 'div.site'
-    ]
+    ]###
+    selectors = ['article.full-article .body']
 
     for selector in selectors
       $element = $(selector)
