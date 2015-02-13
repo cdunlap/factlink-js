@@ -39,4 +39,4 @@ FactlinkJailRoot.stopAnnotating = ->
   $("body").off "mouseup.factlink"
 
 
-FactlinkJailRoot.host_ready_promise.done FactlinkJailRoot.startAnnotating
+# FactlinkJailRoot.host_ready_promise.done FactlinkJailRoot.startAnnotating
