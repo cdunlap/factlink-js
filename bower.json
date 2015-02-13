@@ -1,11 +1,11 @@
 {
   "name": "factlink-js-library",
-  "version": "0.2.0",
+  "version": "0.2.0-1",
   "homepage": "https://github.com/Factlink/js-library",
   "authors": [
     "Factlink Team"
   ],
-  "description": "Factlink's client side library",
+  "description": "Factlink's client side library, with modifications for Future of Work",
   "main": [
     "output/factlink_loader.js",
     "output/factlink_loader.min.js"
